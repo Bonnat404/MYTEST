@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Bash Mini Site</title>
+    <!-- Load Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set a custom font and dark background */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Content Card -->
+    <div class="w-full max-w-lg bg-gray-800 text-white rounded-xl shadow-2xl p-8 transform transition duration-500 hover:scale-[1.01]">
+        
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <svg class="mx-auto h-12 w-12 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+            <h1 class="mt-4 text-3xl font-extrabold text-green-400 tracking-tight">
+                Git Bash Project Success
+            </h1>
+            <p class="text-gray-400 mt-2">
+                A tiny website created purely from your terminal.
+            </p>
+        </header>
+
+        <!-- Dynamic Content Section -->
+        <section class="space-y-6">
+            <div class="bg-gray-700 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-2 border-b border-gray-600 pb-2 text-blue-300">
+                    Terminal Output
+                </h2>
+                <p class="text-sm text-gray-300">
+                    This file was created for a test. !!IT JUST A TEST!!
+                </p>
+            </div>
+            
+            <div class="bg-gray-700 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-2 border-b border-gray-600 pb-2 text-blue-300">
+                    Styling Check
+                </h2>
+                <div id="check-status" class="flex justify-between items-center text-lg font-bold">
+                    <span>Tailwind Loaded:</span>
+                    <span class="text-green-400">✅ YES</span>
+                </div>
+            </div>
+
+            <!-- Simple Interaction -->
+            <button onclick="document.getElementById('check-status').classList.toggle('bg-yellow-800');" 
+                    class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-md transition duration-150 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                Test Interaction
+            </button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-xs text-gray-500">
+            &copy; 11/10/2025
+        </footer>
+    </div>
+</body>
+</html>
